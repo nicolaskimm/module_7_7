@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Nunito", sans-serif; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(41, 75, 89, 0.5), rgba(107, 150, 168, 0.5)), url(../img/header.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center; }
+  .header .container {
+    color: white;
+    margin-top: 180px;
+    padding: 40px;
+    width: 800px;
+    opacity: 0.7;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .header .container .logo {
+      font-size: 80px;
+      animation: moveInDown 1.2s ease-in-out; }
+    .header .container h1 {
+      font-weight: 800;
+      font-size: 60px; }
+    .header .container p {
+      text-align: center;
+      font-weight: 200;
+      font-size: 15px;
+      text-transform: uppercase;
+      animation: moveInUp 1s ease-in-out; }
+    .header .container .headertext {
+      padding: 0 70px; }
+  .header .scrollbutton {
+    margin-top: 250px;
+    width: 40px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 20px; }
+    .header .scrollbutton .dotinbutton {
+      margin: 9px auto 0;
+      background-color: white;
+      width: 3px;
+      height: 3px;
+      border: 2px solid white;
+      border-radius: 30px;
+      animation: scrolldown 2s ease-in-out infinite; }
+
+@keyframes moveInDown {
+  0% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes moveInUp {
+  0% {
+    transform: translateY(100px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes scrolldown {
+  0% {
+    transform: translateY(0);
+    opacity: 1; }
+  50% {
+    opacity: 0.3; }
+  100% {
+    transform: translateY(40px);
+    opacity: 0; } }
+
+/*# sourceMappingURL=style.css.map */
