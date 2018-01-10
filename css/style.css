@@ -127,8 +127,23 @@ h1 {
     margin: 0 auto;
     padding: 80px 0; }
     .services .containerS .box-text {
-      border-color: white;
-      font-size: 20px; }
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      border-top: 0;
+      font-size: 20px;
+      position: relative; }
+      .services .containerS .box-text hr, .services .containerS .box-text .line-left, .services .containerS .box-text .line-right {
+        border: 1px solid white;
+        width: 24%; }
+      .services .containerS .box-text .line-left {
+        position: absolute;
+        top: -20px;
+        left: 0; }
+      .services .containerS .box-text .line-right {
+        position: absolute;
+        top: -20px;
+        right: 0; }
       .services .containerS .box-text h1 {
         transform: translateY(-69px); }
         @media (min-width: 768px) and (max-width: 991px) {

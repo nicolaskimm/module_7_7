@@ -166,8 +166,31 @@ h1 {
         padding: 80px 0;
         
         .box-text {    
-            border-color: white;
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            border-top: 0;
             font-size: 20px;
+            position: relative;
+            
+            hr {
+                border: 1px solid white;
+                width: 24%;
+            }
+            
+            .line-left {
+                @extend hr;
+                position: absolute;
+                top: -20px;
+                left: 0;
+            }
+            
+            .line-right {
+                @extend hr;
+                position: absolute;
+                top: -20px;
+                right: 0;                
+            }
             
             h1 {
                 transform: $transformHeaderL;
